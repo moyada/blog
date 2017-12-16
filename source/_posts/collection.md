@@ -12,6 +12,8 @@ tags:
 * [老高的技术博客](https://blog.phpgao.com/vpses.html)
 * [阿里中间件团队博客](http://jm.taobao.org/categories/)
 * [ELK 大数据](http://www.cnblogs.com/xing901022/p/4704319.html)
+* [猿天地](http://cxytiandi.com)
+* [Java工程师成神之路](http://www.hollischuang.com/archives/1001)
 * http://blog.csdn.net/dengsilinming/article/list/1
 
 ***
@@ -78,6 +80,10 @@ tags:
 # 架构
 * http://mp.weixin.qq.com/s/zsbCnXioxTA1F5cIs_2Ytg
 
+* [Dapper，大规模分布式系统的跟踪系统](http://bigbully.github.io/Dapper-translation)
+
+* [SOA 设计的 9 大原则](http://mp.weixin.qq.com/s?__biz=MzIyNjE4NDcyMA==&mid=2247484013&idx=1&sn=dd96e2ec4e995844dbe65cf4c923f961&chksm=e8751912df02900409dc01efdc41bc96bb9b456042b59736c8c21de20ea980e24a0eaa344b6e&mpshare=1&scene=1&srcid=0227wo5zhY8PP2qnllpDq3A6#rd)
+
 * [荔枝FM异地多活IDC机房架构](http://mp.weixin.qq.com/s?__biz=MzI4OTU3ODk3NQ==&mid=2247483824&idx=1&sn=4c4aa8647d8deac858fc084db9f64bfa&chksm=ec2c4b00db5bc2165d2ce4132214bbae5ac570f3173a038ce463569fb58344e94b178dfe36eb&mpshare=1&scene=23&srcid=0116XqNFW9Vy8aQPEBCrSuqX#rd)
 
 * [消息队列设计精要](http://tech.meituan.com/mq-design.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
@@ -94,30 +100,53 @@ tags:
 
 * [金融架构](http://www.ityouknow.com/架构/2017/01/10/从零到百亿互联网金融架构发展史.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 
+* [支付系统架构](http://mp.weixin.qq.com/s?__biz=MzI4OTU3ODk3NQ==&mid=2247483948&idx=1&sn=7a9d2095c1031186b48d72e2ed84401f&chksm=ec2c489cdb5bc18acc74b138017b8ec001a4941f57e794abb17676d530caf6977dbb2b04ec69&mpshare=1&scene=23&srcid=0304n33JjVWCL8SACm5WQqOc#rd)
+
+* [亿级用户下的新浪微博平台架构](http://blog.jobbole.com/83459/)
+
 * [去哪儿网支付系统](http://mp.weixin.qq.com/s?__biz=MzI4OTU3ODk3NQ==&mid=2247483882&idx=1&sn=a40e61dd96361d46a6c33524e1859248&chksm=ec2c4b5adb5bc24cc2685bf8159f0e14e1f6b4b9f4b2c144fd1b44186ba2096ff392e53c8191&mpshare=1&scene=23&srcid=0209mOFMd3gYi2UZ9pkOhfXs#rd)
+
+* [MTDDL——美团点评分布式数据访问层中间件](https://zhuanlan.zhihu.com/p/24714711)
 
 * [ELK 日志分析系统](http://mp.weixin.qq.com/s?__biz=MzIyNjE4NDcyMA==&mid=2247484003&idx=1&sn=8fe3144cd63a63aa7c68fc6ca08be180&chksm=e875191cdf02900a7556f958df4de45436818cc8015fe7870ef25408d92ab8ea677067d5d9a0&mpshare=1&scene=23&srcid=0219ygyQaZz0saQMj5kfBBSV#rd)
 
 * [Google 是如何做负载均衡](http://blog.jobbole.com/108036/)
 
+* [搜索引擎选择： Elasticsearch与Solr](http://www.cnblogs.com/chowmin/articles/4629220.html)
+
 * [Memcache,Redis,MongoDB（数据缓存系统）方案对比与分析](http://blog.csdn.net/suifeng3051/article/details/23739295)
 	
 * [消息队列设计精要](http://tech.meituan.com/mq-design.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
+
+* [游戏架构](https://zhuanlan.zhihu.com/p/25958589)
 
 ***
 
 # 算法
 ## Snowflake
 * http://www.lanindex.com/twitter-snowflake，64位自增id算法详解/
+
 ## TF-IDF
 * http://www.cnblogs.com/ywl925/archive/2013/08/26/3275878.html
+
+# MESI－CPU缓存一致性协议
+* http://blog.csdn.net/realxie/article/details/7317630
+* http://blog.csdn.net/cqu20093154/article/details/46909903
+* https://en.wikipedia.org/wiki/MESI_protocol
+
 ## PageRank
 * http://blog.csdn.net/hguisu/article/details/7996185
 * https://segmentfault.com/a/1190000000711128
 
+## CRC16 三种算法及c实现
+* http://www.cnblogs.com/Msisiterc/archive/2011/12/20/2294910.html
+
 ***
 
 # 大数据
+## 大数据实时处理实战
+* http://geek.csdn.net/news/detail/163702
+
 ## Beam
 * https://zhuanlan.zhihu.com/p/23618169
 	
@@ -127,19 +156,33 @@ tags:
 * http://hadoop.readthedocs.io/en/latest/Hadoop-Mahout.html
 * http://blog.csdn.net/zhoubl668/article/details/13297663
 
+## Azkaban
+* https://oschina.net/p/azkaban
+* https://azkaban.github.io/
+* http://www.cnblogs.com/fbiswt/p/3318876.html
+
 *** 
 
 # 机器学习
 * http://it.sohu.com/20161221/n476512671.shtml
 * http://blog.csdn.net/BaiHuaXiu123/article/category/6477383
 
+## Keras中文文档
+* http://keras-cn.readthedocs.io/en/latest/#theanotensorflow
+
 ## TensorFlow
 * http://tensorfly.cn
 * http://blog.csdn.net/matrix_space/article/details/54286086
+* http://geek.csdn.net/news/detail/159031
+* http://mp.weixin.qq.com/s/w7sVasusVUntfNXbUaTltg
+* http://blog.jobbole.com/110558/
 
 ## Deeplearning4j(DL4J)
 * https://deeplearning4j.org/cn/
 * http://www.oschina.net/p/deeplearning4j
+
+## 自动图像补全
+* https://mp.weixin.qq.com/s/oWUDqhhi2B4mjqZpe0_oaQ
 
 ## 部署
 * http://geek.csdn.net/news/detail/134150
@@ -162,6 +205,9 @@ tags:
 ## 网络IO之阻塞、非阻塞、同步、异步
 * http://www.cnblogs.com/Anker/p/3254269.html
 	
+## Linux 4.4 之后 TCP 三路握手的新流程
+* https://zhuanlan.zhihu.com/p/25313903
+
 ## Learn
 * http://roclinux.cn/?page_id=3759
 * http://www.cnblogs.com/peida/archive/2012/12/05/2803591.html
@@ -215,6 +261,9 @@ tags:
 * http://ifeve.com/disruptor/
 * http://ifeve.com/disruptor-getting-started/
 
+## 深入浅出MyBatis-Configuration
+* http://blog.csdn.net/hupanfeng/article/details/9080545
+
 ## spring监听器
 * http://blog.csdn.net/blueboz/article/details/49949573
 * https://my.oschina.net/huangcongcong/blog/527779
@@ -236,8 +285,15 @@ tags:
 * http://blog.csdn.net/quzishen/article/details/6163012/
 * http://dengkane.iteye.com/blog/2208953
 
+## JVM
+* http://geek.csdn.net/news/detail/131976
+* http://www.importnew.com/22240.html#comment-541402
+* http://blog.csdn.net/qq_35101189/article/details/55657798
+* http://blog.csdn.net/renfufei/article/details/56678064
+
 ## java8
 * https://www.ibm.com/developerworks/cn/java/j-lo-jdk8newfeature/index.html
+
 ### IO
 * http://it.deepinmind.com/java/2014/02/13/Java8-features-new-new-io.html
 
@@ -249,6 +305,12 @@ tags:
 * http://www.cnblogs.com/huaizuo/p/5371099.html
 * https://yq.aliyun.com/articles/36781
 
+### Spring Boot参考指南
+* https://www.gitbook.com/book/qbgbook/spring-boot-reference-guide-zh/details
+
+### Spring Boot 入门
+* http://blog.csdn.net/isea533/article/details/50278205
+
 ### Spring 4
 * http://www.infoq.com/cn/articles/spring-4-java-8
 * https://www.techempower.com/blog/2013/03/26/everything-about-java-8/
@@ -258,9 +320,6 @@ tags:
 * http://winterbe.com/posts/2015/03/25/java8-examples-string-number-math-files/
 * http://eherrera.net/ocpj8-notes/09-java-file-io-(NIO.2)
 * http://ifeve.com/java-8-features-tutorial/
-
-### JVM
-* http://geek.csdn.net/news/detail/131976
 
 ### CAS
 * http://blog.hesey.net/2011/09/resolve-aba-by-atomicstampedreference.html
@@ -273,8 +332,17 @@ tags:
 # Python
 * [PyCharm vs. Sublime Text](https://opensourcehacker.com/2015/05/02/pycharm-vs-sublime-text/)
 
+## python守护进程demo
+* https://blog.phpgao.com/pythond.html
+
 ## Python Tutorial
 * http://www.pythondoc.com 
+* http://www.runoob.com/python3/python3-basic-syntax.html
+* http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431658624177ea4f8fcb06bc4d0e8aab2fd7aa65dd95000
+
+## 爬虫
+* https://zhuanlan.zhihu.com/p/21377121
+* https://xlzd.me/tag/crawler/2/
 
 ## 文本挖掘
 * http://geek.csdn.net/news/detail/129348
@@ -284,6 +352,9 @@ tags:
 
 ## pip
 * http://blog.163.com/yang_jianli/blog/static/161990006201162152724339/
+
+## Nginx + Gunicorn + Django
+* http://www.isaced.com/post-248.html
 
 # MySQL
 * http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001391435131816c6a377e100ec4d43b3fc9145f3bb8056000
@@ -302,8 +373,17 @@ tags:
 ***
 
 # 其他
+## DevOps
+* http://www.infoq.com/cn/articles/devops-not-legend
+
+## SRE之道
+* https://yq.aliyun.com/articles/70525
+
 ## 技术领域
 ** http://geek.csdn.net/news/detail/134070
+
+## HTTPS 与 HTTP2 协议分析
+* http://geek.csdn.net/news/detail/188003
 
 ## Reactor和Proactor模式
 * http://blog.csdn.net/caiwenfeng_for_23/article/details/8458299
@@ -316,6 +396,9 @@ tags:
 ## 半包、粘包
 * http://www.cnblogs.com/jiangtong/archive/2012/03/22/2411985.html
 * http://www.itstack.org/?post=12
+
+## Sftp和ftp 区别、工作原理等
+* http://blog.csdn.net/cuker919/article/details/6403925
 
 ## 双向数据绑定
 * https://segmentfault.com/q/1010000002511449/a-1020000002514653
