@@ -1,6 +1,6 @@
 ---
 title: maven
-categories: java
+categories: 随笔
 date: 2017-03-31 01:42:17
 tags:
 ---

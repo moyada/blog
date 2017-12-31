@@ -1,43 +1,43 @@
----
+\-\--
 title: Git的学习
 categories: git
 date: 2017-02-25 12:53:10
 tags:
----
+\-\--
 
 # 设置基本配置
 * 让Git显示颜色，会让命令输出看起来更醒目：
 ```
-$ git config --global color.ui true
+$ git config \-\-global color.ui true
 ```
 
 * 设置全局用户信息
 ```
-$ git config --global user.name "Your Name"
-$ git config --global user.email "email@example.com"
+$ git config \-\-global user.name "Your Name"
+$ git config \-\-global user.email "email@example.com"
 ```
 
 * 记录用户密码
 ```
 git config credential.helper store
 # 设置过期时间
-git config credential.helper 'cache --timeout=3600'
+git config credential.helper 'cache \-\-timeout=3600'
 ```
 
 * 增加删除信息
 ```
-$ git config --list --global
-$ git config --global --add user.name xyk
-$ git config --get user.name
-$ git config --global --unset user.name xyk
+$ git config \-\-list \-\-global
+$ git config \-\-global \-\-add user.name xyk
+$ git config \-\-get user.name
+$ git config \-\-global \-\-unset user.name xyk
 ```
 
 * 设置命令别名
 ```
 设置checkout别名为co
-$ git config --global alias.co checkout
+$ git config \-\-global alias.co checkout
 设置stash别名为sh
-$ git config --global alias.co checkout
+$ git config \-\-global alias.co checkout
 ```
 
 # 简单使用
@@ -48,13 +48,13 @@ $ git config --global alias.co checkout
 第二步，使用命令$ git commit [-a] -m "message"，将暂存区的文件提交到本地仓库里。
 要随时掌握工作区的状态，使用git status命令。
 如果$ git status告诉你有文件被修改过，用$ git diff可以查看修改内容。
-3. 如果需要丢弃未暂存的文件，可以使用$ git checkout [--] <file> 丢弃工作区的文件
+3. 如果需要丢弃未暂存的文件，可以使用$ git checkout [\-\-] <file> 丢弃工作区的文件
 4. 如果需要丢弃已暂存的文件，可以使用$ git reset [HEAD] <file> 丢弃暂存区的文件
-移除文件: $ git rm --cached <file>
+移除文件: $ git rm \-\-cached <file>
 移动重命名文件: $ git mv <file> <new_file>
-将暂存区的文件添加到本地仓库里的最后一次提交: $ git commit --amend
+将暂存区的文件添加到本地仓库里的最后一次提交: $ git commit \-\-amend
 5. $ git push origin <branch_name> 提交到远程仓库
-6. 如果本地仓库与远程仓库不属于同一祖先的话，先git pull <remote_name> <branch> --allow-unrelated-histories 同步分支后在提交
+6. 如果本地仓库与远程仓库不属于同一祖先的话，先git pull <remote_name> <branch> \-\-allow-unrelated-histories 同步分支后在提交
 
 # 忽略文件
 如果有不需要参与提交的文件，可以创建文件.gitignore，以正则表达式的形式，将不需要的文件表达加入进去:
@@ -118,7 +118,7 @@ $ git tag -s <tagname>  -m "signed version 0.2 released" fec145a
 查看标签信息可以用: $ git show <tagname>
 
 命令$ git push origin <tagname>可以推送一个本地标签；
-命令$ git push origin --tags可以推送全部未推送过的本地标签；
+命令$ git push origin \-\-tags可以推送全部未推送过的本地标签；
 命令$ git tag -d <tagname>可以删除一个本地标签；
 命令$ git push origin :refs/tags/<tagname>可以删除一个远程标签。
 
@@ -131,27 +131,27 @@ $ git merge <branch_name>
 当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
 如果想放弃此次合并的话，可以使用命令:
 ```
-$ git merge --abort
+$ git merge \-\-abort
 ```
 
 当合并的分支衍生处在一条分支上时，Git会用Fast forward模式。
 如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
 
-使用--no-ff参数，可以禁用Fast forward：
+使用\-\-no-ff参数，可以禁用Fast forward：
 ```
-$ git merge --no-ff -m "merge with no-ff" <branch_name>
+$ git merge \-\-no-ff -m "merge with no-ff" <branch_name>
 ```
-用$ git log --graph命令可以看到分支合并图。
+用$ git log \-\-graph命令可以看到分支合并图。
 用带参数的git log也可以看到分支的合并情况：
 ```
-$ git log --graph --oneline --abbrev-commit
+$ git log \-\-graph \-\-oneline \-\-abbrev-commit
 ```
 
 # 版本操作
 ## 查看历史
 * 查看所有分支的历史示意图:
 ```
-$ git log --oneline --stat --decorate --graph --all -p
+$ git log \-\-oneline \-\-stat \-\-decorate \-\-graph \-\-all -p
 ```
 
 * 查看工作区与历史提交之间的差异
@@ -161,7 +161,7 @@ $ git diff
 
 * 查看暂存区与历史提交之间的差异
 ```
-$ git diff --cached
+$ git diff \-\-cached
 ```
 
 * 查看工作区与历史提交之间的差异
@@ -171,7 +171,7 @@ $ git diff <commit_id>
 
 * 查看暂存区与历史提交之间的差异
 ```
-$ git diff --cached <commit_id>
+$ git diff \-\-cached <commit_id>
 ```
 
 * 查看历史提交之间的差异
@@ -181,21 +181,21 @@ $ git diff <commit_id> <commit_id>
 
 * 查看工作区与历史提交的某个文件的单词差异
 ```
-$ git diff --color-words [--] <file>
-$ git diff --word-diff [--] <file>
+$ git diff \-\-color-words [\-\-] <file>
+$ git diff \-\-word-diff [\-\-] <file>
 ```
 
 ## 撤销操作
 * 恢复暂存区某个文件的某个历史版本
 ```
-$ git checkout <commit_id> [--] <file> 
+$ git checkout <commit_id> [\-\-] <file> 
 ```
 
 * 恢复工作区某个文件的某个历史版本
 ```
-$ git reset <commit_id> [--] <file> 
+$ git reset <commit_id> [\-\-] <file> 
 ```
----
+\-\--
 清除操作:
 $ git clean 
 -n 查看准备移除工作区文件
@@ -203,7 +203,7 @@ $ git clean
 -X 移除忽略文件内的表达式的文件及工作区文件
 -f 执行移除工作区文件
 
----
+\-\--
 移除某次提交的内容:
 ```
 $ git revert <commit_id>
@@ -211,7 +211,7 @@ $ git revert <commit_id>
 
 ## 修改历史
 替换最后一次提及
-$ git commit --amend
+$ git commit \-\-amend
 
 将当前分支设置为另一分支的衍生分支
 $ git rebase <branch_name>
@@ -221,13 +221,13 @@ $ git rebase <branch_name>
 ```
 HEAD指向的版本就是当前版本，Git允许我们在版本的历史之间穿梭，
 ~和^均可代表向上一个版本
-$ git reset --hard HEAD~  # 回到上一个版本；
-$ git reset --hard HEAD^^  # 回到上两个版本；
-$ git reset --hard <commit_tag>  # 回退到指定版本。
+$ git reset \-\-hard HEAD~  # 回到上一个版本；
+$ git reset \-\-hard HEAD^^  # 回到上两个版本；
+$ git reset \-\-hard <commit_tag>  # 回退到指定版本。
 ```
---hard 使用某次提交的内容还原暂存区和工作区
---mixed 只使用某次提交的内容还原暂存区，并把HEAD和分支引用指向指定的commit
---soft 只把HEAD和分支引用指向指定的commit
+\-\-hard 使用某次提交的内容还原暂存区和工作区
+\-\-mixed 只使用某次提交的内容还原暂存区，并把HEAD和分支引用指向指定的commit
+\-\-soft 只把HEAD和分支引用指向指定的commit
 
 # 远程仓库
 ## 创建SSH Key
@@ -280,13 +280,13 @@ $ git fetch [origin [branch_name]
 获取远程分支的最新代码到本地的远程分支上并与本地分支合并:
 $ git pull [origin [branch_name]
 如果提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，
-用命令建立:$ git branch --set-upstream <local_branch_name> origin <remote_branch_name>。
+用命令建立:$ git branch \-\-set-upstream <local_branch_name> origin <remote_branch_name>。
 
-如果是是两个不同的项目，则需要先 git pull --allow-unrelated-histories
+如果是是两个不同的项目，则需要先 git pull \-\-allow-unrelated-histories
 
 删除远程分支
 ```
-$ git push --delete origin <branch_name>
+$ git push \-\-delete origin <branch_name>
 或者
 $ git push origin :<branch_name>
 ```
@@ -303,7 +303,7 @@ $ sudo adduser git
 
 4. 初始化Git仓库：
 先选定一个目录作为Git仓库，假定是/srv/sample.git，在/srv目录下输入命令：
-$ sudo git init --bare sample.git
+$ sudo git init \-\-bare sample.git
 Git就会创建一个裸仓库，裸仓库没有工作区，因为服务器上的Git仓库纯粹是为了共享，所以不让用户直接登录到服务器上去改工作区，并且服务器上的Git仓库通常都以.git结尾。然后，把owner改为git：
 $ sudo chown -R git:git sample.git
 

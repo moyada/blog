@@ -5,7 +5,7 @@
 # Site
 title: 阿库西斯教团
 subtitle: 137-3541-3731
-description: 勇者は巨乳が好きで、何が悪い？
+description: 干不下去了回家卖水果
 author: moyada
 language: zh-Hans
 timezone:
@@ -28,7 +28,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: title.md # File name of new posts
+new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -71,7 +71,7 @@ theme: next
 deploy:
   type: git
   # repo: git@github.com:xueyikang/xueyikang.github.io.git
-  repo: https://github.com/xueyikang/xueyikang.github.io.git
+  repo: https://github.com/moyada/xueyikang.github.io
   message: "Github Site updateed: {{ now('YYYY-MM-DD HH:mm:ss') }}"
   branch: master
 
