@@ -71,7 +71,7 @@ theme: next
 deploy:
   type: git
   # repo: git@github.com:xueyikang/xueyikang.github.io.git
-  repo: https://github.com/moyada/xueyikang.github.io
+  repo: https://github.com/moyada/moyada.github.io
   message: "Github Site updateed: {{ now('YYYY-MM-DD HH:mm:ss') }}"
   branch: master
 
