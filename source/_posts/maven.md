@@ -1,6 +1,6 @@
 ---
 title: maven
-categories: 随笔
+categories: 项目管理
 date: 2017-03-31 01:42:17
 tags:
 ---
@@ -14,8 +14,11 @@ tags:
 * mvn test: 执行测试
 * mvn package: 打包项目输出到target目录下
 * mvn install: 安装项目到本地仓库
-* mvn deploy: 将打包好的包上传到远程仓库
+  安装本地jar包: mvn install:install-file -Dfile=a.jar -DgroupId=com.a -DartifactId=a -Dversion=0.0.1 -Dpackaging=jar
+* mvn deploy: 将打包好的包上传到远程仓库,`[-N]`跳过子模块
 * mvn site: 生成站点
+
+跳过测试用例 -Dmaven.test.skip=true
 
 ## 依赖
 

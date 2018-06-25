@@ -1,9 +1,7 @@
-\-\--
 title: Git的学习
-categories: git
+categories: 项目管理
 date: 2017-02-25 12:53:10
 tags:
-\-\--
 
 # 设置基本配置
 * 让Git显示颜色，会让命令输出看起来更醒目：
@@ -72,9 +70,12 @@ $ git config \-\-global alias.co checkout
 ```
 查看分支：$ git branch
 创建分支：$ git branch <branch_name>
+创建远端分支: $ git checkout -b <branch_name> origin/<branch_name> 或 git fetch origin <branch_name>:<branch_name>
+建立远端映射关系: $ git branch -u origin/<branch_name>
 切换分支：$ git checkout <branch_name>
 创建+切换分支：$ git checkout -b <branch_name>
 删除分支：$ git branch -d <branch_name>
+删除远端分支: $ git branch -r -d origin/<branch_name>, git push origin :<branch_name>
 ```
 如果要丢弃一个没有被合并过的分支，可以通过$ git branch -D <branch_name>强行删除。
 

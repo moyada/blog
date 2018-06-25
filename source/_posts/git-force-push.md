@@ -1,6 +1,6 @@
 ---
 title: Git操作：完全替换分支
-categories: git
+categories: 项目管理
 date: 2017-06-11 19:07:30
 tags:
 ---

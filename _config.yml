@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 阿库西斯教团
-subtitle: 137-3541-3731
-description: 干不下去了回家卖水果
+title: curd boy
+subtitle: 
+description: Don't believe everything you read, <br/>Come up with you own theories and test them.
 author: moyada
 language: zh-Hans
 timezone:
@@ -74,6 +74,8 @@ deploy:
   repo: https://github.com/moyada/moyada.github.io
   message: "Github Site updateed: {{ now('YYYY-MM-DD HH:mm:ss') }}"
   branch: master
+  user.name: xueyikang
+  user.email: xykmoyada@gmail.com
 
 jsonContent:
     meta: false

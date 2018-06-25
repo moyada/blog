@@ -1,5 +1,6 @@
 id_rsa
 id_rsa.pub
+.deploy_git/
 404.html
 archives/
 categories/
